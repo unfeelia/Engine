@@ -1,0 +1,23 @@
+﻿<Window x:Class="EngineDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EngineDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="242" Margin="141,65,0,0" VerticalAlignment="Top" Width="467" Grid.ColumnSpan="2"/>
+        <Button x:Name="rigth" Content="Rigth" Grid.Column="1" HorizontalAlignment="Left" Margin="483,361,0,0" VerticalAlignment="Top" Width="75" Click="Rigth_Click"/>
+        <Button x:Name="left" Content="Left" Grid.Column="1" HorizontalAlignment="Left" Margin="403,361,0,0" VerticalAlignment="Top" Width="75" Click="Left_Click"/>
+        <Button x:Name="top" Content="Top" Grid.Column="1" HorizontalAlignment="Left" Margin="440,334,0,0" VerticalAlignment="Top" Width="75" Click="Top_Click"/>
+        <Button x:Name="bot" Content="Bot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="440,388,0,0" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="skip" Content="Skip" Grid.Column="1" HorizontalAlignment="Left" Margin="292,388,0,0" VerticalAlignment="Top" Width="75" Click="Skip_Click"/>
+        <Button x:Name="endTurn" Content="Switch Turn" Grid.Column="1" HorizontalAlignment="Left" Margin="292,361,0,0" VerticalAlignment="Top" Width="75" Click="EndTurn_Click"/>
+
+    </Grid>
+</Window>
